@@ -1,0 +1,35 @@
+.review {
+  .slide {
+    width: 35rem;
+    padding: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    border: $border;
+    box-shadow: $box-shadow;
+
+    img {
+      height: 10rem;
+      width: 10rem;
+      border-radius: 50%;
+      margin-bottom: 0.5rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+
+      color: $darkColor;
+    }
+
+    span {
+      color: $primaryColor;
+      font-size: 1.7rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      line-height: 2;
+      color: $lightColor;
+      padding-top: 1rem;
+    }
+  }
+}

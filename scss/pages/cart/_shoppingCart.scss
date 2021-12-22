@@ -1,0 +1,102 @@
+.shopping-cart {
+  .box-container {
+    @include grid(31rem);
+
+    .box {
+      padding: 2rem;
+      border: $border;
+      background: $white;
+      border-radius: 0.5rem;
+      box-shadow: $box-shadow;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      position: relative;
+
+      .fa-times {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        font-size: 3rem;
+        color: $lightColor;
+        cursor: pointer;
+
+        &:hover {
+          color: $darkColor;
+        }
+      }
+
+      img {
+        height: 12rem;
+      }
+
+      .content {
+        h3 {
+          font-size: 1.7rem;
+          color: $darkColor;
+        }
+
+        form {
+          padding: 1rem 0;
+          display: flex;
+          gap: 0.5rem;
+          align-items: center;
+
+          span {
+            font-size: 1.5rem;
+            color: $lightColor;
+          }
+
+          input {
+            width: 7rem;
+            padding: 0.5rem 1rem;
+            color: $lightColor;
+            border-radius: 0.5rem;
+            background: $bgColor;
+            font-size: 1.5rem;
+          }
+        }
+
+        .price {
+          font-size: 2rem;
+          color: $primaryColor;
+
+          span {
+            font-size: 1.5rem;
+            color: $lightColor;
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+  }
+
+  .cart-total {
+    margin-top: 2rem;
+    box-shadow: $box-shadow;
+    border: $border;
+    border-width: 0.5rem;
+    background: $white;
+    padding: 1rem 2rem 2rem;
+
+    h3 {
+      padding-top: 1rem;
+      font-size: 2rem;
+      color: $darkColor;
+
+      span {
+        color: $primaryColor;
+      }
+    }
+  }
+}
+
+@include sm {
+  .shopping-cart .cart-total {
+    text-align: center;
+
+    .btn {
+      width: 100%;
+    }
+  }
+}

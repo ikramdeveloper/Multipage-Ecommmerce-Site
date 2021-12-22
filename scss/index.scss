@@ -1,0 +1,27 @@
+// variables
+@import "./variables";
+
+// media
+@import "./media";
+
+// base
+@import "./base";
+
+// sections
+@import "./sections/header";
+@import "./sections/sidebar";
+@import "./sections/footer";
+@import "./pages/home/home";
+@import "./pages/home/arrivals";
+@import "./pages/home/banner";
+@import "./pages/about/about";
+@import "./pages/about/reviews";
+@import "./pages/contact/contact";
+@import "./pages/contact/contactInfo";
+@import "./pages/contact/newsletter";
+@import "./pages/products/category";
+@import "./pages/products/products";
+@import "./pages/products/productBanner";
+@import "./pages/cart/shoppingCart";
+@import "./pages/register/register";
+@import "./pages/login/login";

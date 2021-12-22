@@ -1,0 +1,45 @@
+.product-banner {
+  .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    .box {
+      flex: 1 1 42rem;
+      position: relative;
+      box-shadow: $box-shadow;
+      border-radius: 0.5rem;
+      border: $border;
+      overflow: hidden;
+      height: 30rem;
+
+      &:hover img {
+        transform: scale(1.1);
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .content {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translateY(-50%);
+
+        span {
+          font-size: 1.7rem;
+          color: $primaryColor;
+        }
+
+        h3 {
+          padding-top: 0.5rem;
+          font-size: 2rem;
+          color: $darkColor;
+        }
+      }
+    }
+  }
+}

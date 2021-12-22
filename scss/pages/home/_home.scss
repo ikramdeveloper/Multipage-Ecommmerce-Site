@@ -1,0 +1,68 @@
+.home {
+  background: $white;
+
+  .slide {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    min-height: 50rem;
+    padding: 2rem 0;
+
+    .image {
+      flex: 1 1 42rem;
+      text-align: center;
+
+      img {
+        height: 30rem;
+      }
+    }
+
+    .content {
+      flex: 1 1 42rem;
+
+      span {
+        font-size: 2rem;
+        color: $primaryColor;
+      }
+
+      h3 {
+        padding-top: 0.5rem;
+        color: $darkColor;
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 3rem;
+  color: $darkColor;
+}
+
+@include md {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .home {
+    .slide {
+      text-align: center;
+    }
+  }
+}
+
+@include sm {
+  .home {
+    .slide {
+      .image {
+        img {
+          height: auto;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

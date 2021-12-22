@@ -1,0 +1,109 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: $primaryColor;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 9%;
+
+  .logo {
+    font-size: 2.5rem;
+    color: $white;
+    font-weight: bolder;
+
+    i {
+      color: $secondaryColor;
+    }
+  }
+
+  .search-form {
+    border-radius: 5rem;
+    height: 5rem;
+    width: 50rem;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    background: $white;
+
+    input {
+      width: 100%;
+      padding-right: 1rem;
+      font-size: 1.7rem;
+      text-transform: none;
+      color: $lightColor;
+    }
+
+    label {
+      font-size: 2rem;
+      color: $lightColor;
+      cursor: pointer;
+
+      &:hover {
+        color: $primaryColor;
+      }
+    }
+  }
+
+  .icons :where(a, div) {
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    color: $white;
+    cursor: pointer;
+
+    &:hover {
+      color: $secondaryColor;
+    }
+  }
+}
+
+#search-btn {
+  display: none;
+}
+
+@include xlg {
+  .header {
+    padding: 2rem;
+  }
+}
+
+@include md {
+  #search-btn {
+    display: inline-block;
+  }
+
+  .header {
+    .search-form {
+      position: absolute;
+      top: 99%;
+      left: 0;
+      right: 0;
+      width: 100%;
+      border-radius: 0;
+      box-shadow: $box-shadow;
+      height: 6rem;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+      &.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+  }
+}
+
+@include sm {
+  .header {
+    justify-content: center;
+
+    .logo {
+      display: none;
+    }
+
+    .icons :where(a, div) {
+      margin: 0 1rem;
+    }
+  }
+}

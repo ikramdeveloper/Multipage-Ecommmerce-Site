@@ -1,0 +1,30 @@
+$width: (
+  "sm": 442px,
+  "md": 768px,
+  "lg": 992px,
+  "xlg": 1200px,
+);
+
+@mixin sm {
+  @media (max-width: map-get($width, "sm")) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: map-get($width, "md")) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: map-get($width, "lg")) {
+    @content;
+  }
+}
+
+@mixin xlg {
+  @media (max-width: map-get($width, "xlg")) {
+    @content;
+  }
+}

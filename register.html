@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- swiper css  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Multipage Ecommerce Website</title>
+  </head>
+  <body>
+    <app-header></app-header>
+
+    <!-- register form section -->
+    <section class="register">
+      <form>
+        <h3>register now</h3>
+        <input type="text" placeholder="enter your name" class="box" />
+        <input type="email" placeholder="enter your email" class="box" />
+        <input type="password" placeholder="enter your password" class="box" />
+        <input
+          type="password"
+          placeholder="re-enter your password"
+          class="box"
+        />
+
+        <input type="submit" value="register now" class="btn" />
+        <p>already have an account?</p>
+        <a href="login.html" class="btn link">login now</a>
+      </form>
+    </section>
+    <!-- end register form section -->
+
+    <app-footer></app-footer>
+
+    <!-- swiper      -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js  -->
+    <script src="./js/custom-elements.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

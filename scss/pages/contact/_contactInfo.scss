@@ -1,0 +1,43 @@
+.info-container {
+  .box-container {
+    @include grid(31rem);
+
+    .box {
+      background: $white;
+      border-radius: 0.5rem;
+      text-align: center;
+      padding: 2rem;
+      border: $border;
+      box-shadow: $box-shadow;
+
+      i {
+        height: 7.5rem;
+        width: 7.5rem;
+        line-height: 7.5rem;
+        font-size: 2.5rem;
+        border-radius: 50%;
+        margin-bottom: 0.5rem;
+        background: $primaryColor;
+        color: $white;
+      }
+
+      h3 {
+        font-size: 2rem;
+        padding: 0.5rem 0;
+        color: $darkColor;
+      }
+
+      p {
+        font-size: 1.5rem;
+        line-height: 2;
+        color: $lightColor;
+      }
+
+      &:last-child {
+        p {
+          text-transform: lowercase;
+        }
+      }
+    }
+  }
+}

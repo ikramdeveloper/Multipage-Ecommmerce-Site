@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- swiper css  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Multipage Ecommerce Website</title>
+  </head>
+  <body>
+    <app-header></app-header>
+
+    <!-- shopping cart section -->
+    <section class="shopping-cart">
+      <h1 class="heading">your <span>products</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-times"></i>
+          <img src="./images/product-1.jpg" alt="product" />
+          <div class="content">
+            <h3>smartphone</h3>
+            <form>
+              <span>quantity : </span>
+              <input type="number" value="1" min="1" />
+            </form>
+            <div class="price">$249.99 <span>$399.99</span></div>
+          </div>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-times"></i>
+          <img src="./images/product-2.jpg" alt="product" />
+          <div class="content">
+            <h3>camera</h3>
+            <form>
+              <span>quantity : </span>
+              <input type="number" value="1" min="1" />
+            </form>
+            <div class="price">$249.99 <span>$399.99</span></div>
+          </div>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-times"></i>
+          <img src="./images/product-3.jpg" alt="product" />
+          <div class="content">
+            <h3>television</h3>
+            <form>
+              <span>quantity : </span>
+              <input type="number" value="1" min="1" />
+            </form>
+            <div class="price">$249.99 <span>$399.99</span></div>
+          </div>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-times"></i>
+          <img src="./images/product-4.jpg" alt="product" />
+          <div class="content">
+            <h3>speakers</h3>
+            <form>
+              <span>quantity : </span>
+              <input type="number" value="1" min="1" />
+            </form>
+            <div class="price">$249.99 <span>$399.99</span></div>
+          </div>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-times"></i>
+          <img src="./images/product-6.jpg" alt="product" />
+          <div class="content">
+            <h3>smartwatch</h3>
+            <form>
+              <span>quantity : </span>
+              <input type="number" value="1" min="1" />
+            </form>
+            <div class="price">$249.99 <span>$399.99</span></div>
+          </div>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-times"></i>
+          <img src="./images/product-7.jpg" alt="product" />
+          <div class="content">
+            <h3>headphone</h3>
+            <form>
+              <span>quantity : </span>
+              <input type="number" value="1" min="1" />
+            </form>
+            <div class="price">$249.99 <span>$399.99</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart-total">
+        <h3>subtotal : <span>$1499.94</span></h3>
+        <h3>discount : <span>$99.94</span></h3>
+        <h3>total : <span>$1400</span></h3>
+        <a href="#" class="btn">proceed to checkout</a>
+      </div>
+    </section>
+    <!-- end shopping cart section -->
+    <app-footer></app-footer>
+
+    <!-- swiper      -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js  -->
+    <script src="./js/custom-elements.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

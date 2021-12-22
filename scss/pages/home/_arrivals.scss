@@ -1,0 +1,73 @@
+.arrivals {
+  .box-container {
+    @include grid(33rem);
+
+    .box {
+      border-radius: 0.5rem;
+      border: $border;
+      padding: 2rem;
+      box-shadow: $box-shadow;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: $white;
+
+      &:hover {
+        .image {
+          .main-img {
+            display: none;
+          }
+
+          .hover-img {
+            display: inline-block;
+          }
+        }
+      }
+
+      .image {
+        img {
+          height: 15rem;
+          animation: fadeIn 0.2s linear;
+        }
+
+        .hover-img {
+          display: none;
+        }
+      }
+
+      .content {
+        h3 {
+          font-size: 2rem;
+          color: $darkColor;
+        }
+
+        .price {
+          padding-top: 0.5rem;
+          font-size: 2rem;
+          color: $primaryColor;
+          padding-bottom: 0.7rem;
+
+          span {
+            font-size: 1.5rem;
+            color: $lightColor;
+            text-decoration: line-through;
+            padding-bottom: 0.7rem;
+          }
+        }
+
+        .stars i {
+          font-size: 1.5rem;
+          color: $secondaryColor;
+        }
+      }
+    }
+  }
+}
+
+@include sm {
+  .arrivals .box-container .box {
+    flex-flow: column;
+    gap: 2rem;
+    text-align: center;
+  }
+}

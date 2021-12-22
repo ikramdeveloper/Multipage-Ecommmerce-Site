@@ -1,0 +1,42 @@
+.banner {
+  .box-container {
+    @include grid(31rem);
+
+    .box {
+      position: relative;
+      height: 25rem;
+      border: $border;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      box-shadow: $box-shadow;
+
+      &:hover img {
+        transform: scale(1.1);
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .content {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translateY(-50%) rotate(45deg);
+
+        span {
+          font-size: 1.7rem;
+          color: $primaryColor;
+        }
+
+        h3 {
+          font-size: 2rem;
+          padding: 1.5rem 0;
+          color: $darkColor;
+        }
+      }
+    }
+  }
+}

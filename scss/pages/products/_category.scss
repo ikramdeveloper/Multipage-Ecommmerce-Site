@@ -1,0 +1,32 @@
+.category {
+  .box-container {
+    @include grid(15rem);
+
+    .box {
+      text-align: center;
+      border-radius: 0.5rem;
+      border: $border;
+      padding: 2rem;
+      background: $white;
+      box-shadow: $box-shadow;
+
+      &:hover {
+        background: $darkColor;
+
+        h3 {
+          color: $white;
+        }
+      }
+
+      img {
+        height: 8rem;
+        margin-bottom: 0.5rem;
+      }
+
+      h3 {
+        font-size: 1.7rem;
+        color: $darkColor;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.login {
+  form {
+    max-width: 40rem;
+    margin-inline: auto;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    background: $white;
+    box-shadow: $box-shadow;
+    border: $border;
+
+    h3 {
+      font-size: 2.5rem;
+      padding-bottom: 1rem;
+      color: $darkColor;
+      text-transform: uppercase;
+    }
+
+    .box {
+      width: 100%;
+      padding: 1.2rem 1.4rem;
+      border-radius: 0.5rem;
+      border: $border;
+      font-size: 1.6rem;
+      color: $lightColor;
+      text-transform: none;
+      margin: 0.7rem 0;
+    }
+
+    .remember {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding-block: 1rem;
+      label {
+        font-size: 1.5rem;
+        color: $lightColor;
+        cursor: pointer;
+      }
+    }
+
+    .btn {
+      width: 100%;
+      text-align: center;
+
+      &.link {
+        background: $darkColor;
+
+        &:hover {
+          background: $primaryColor;
+        }
+      }
+    }
+
+    p {
+      padding-top: 2rem;
+      font-size: 1.5rem;
+      color: $lightColor;
+      text-align: center;
+      padding-bottom: 1rem;
+    }
+  }
+}
